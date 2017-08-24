@@ -1,10 +1,10 @@
 {
-  "name": "caboose",
+  "name": "regent",
   "version": "1.0.0",
-  "description": "choo starter",
+  "description": "choo tiles",
   "main": "index.js",
   "scripts": {
-    "start": "budo index.js:bundle.js --live -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
+    "start": "budo index.js:bundle.js --live -p 3000 -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
   },
   "author": "chris keller",
   "license": "ISC",
@@ -25,5 +25,10 @@
     "uglifyify": "^4.0.3",
     "unassertify": "^2.0.4",
     "yo-yoify": "^3.7.3"
+  },
+  "browserify": {
+    "transform": [
+      "sheetify/transform"
+    ]
   }
 }
