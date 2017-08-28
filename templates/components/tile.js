@@ -4,7 +4,7 @@ const card = require("./card")
 
 const tileStyle = css`
     :host {
-        border: 5px solid red;
+        border: 5px solid darkolivegreen;
         box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.4), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
     }
 `
